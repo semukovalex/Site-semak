@@ -151,6 +151,26 @@ textarea {
     text-align: center;
 }
 
+#f{
+    background: #2d2d2d;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#f i{
+    color: #bdbdbd;
+    font-size: 30px;
+    padding: 20px;
+}
+
+#f i:hover{
+    color: #ff7878;
+}
+
+#padding-frame{
+    padding-top: 15px;
+}
+
 @media screen and (max-width: 1199px) {
     #border-form{
         width: auto; height: auto;
