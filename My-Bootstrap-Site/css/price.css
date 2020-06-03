@@ -102,3 +102,51 @@ hr{
     font-weight: 300;
     letter-spacing: 3px;
 }
+
+@media screen and (max-width: 500px) {
+    #headerwrap h1{
+        font-size: 30px;
+       
+    }
+    
+    #headerwrap h2{
+        font-size: 26px;
+    }
+
+    #headerwrap{
+        min-height: 200px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .card {
+        width: 320px;
+        height: 300px;
+    }
+
+    #headerwrap h1{
+        font-size: 28px;
+       
+    }
+    
+    #headerwrap h2{
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (max-width: 330px) {
+    .card {
+        width: 280px;
+        height: 300px;
+    }
+
+    #headerwrap h1{
+        font-size: 24px;
+       
+    }
+    
+    #headerwrap h2{
+        font-size: 20px;
+    }
+}

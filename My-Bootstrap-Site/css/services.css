@@ -125,6 +125,14 @@ hr{
     background-color: transparent;
 }
 
+#sl h4{
+    font-size: 46px;
+}
+
+#sl h2{
+    font-size: 20px;
+}
+
 .front img {
     width: 344px;
     height: 294px;
@@ -208,9 +216,17 @@ hr{
         font-size: 12px;
         margin: 5px 0px 5px;
     }
+    
+    #sl h4{
+        font-size: 34px;
+    }
+
+    #sl h2{
+        font-size: 14px;
+    }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 370px) {
     .card {
         width: 320px;
         height: 300px;
@@ -224,9 +240,10 @@ hr{
     #headerwrap h2{
         font-size: 22px;
     }
+
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 330px) {
     .card {
         width: 280px;
         height: 300px;

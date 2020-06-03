@@ -232,16 +232,28 @@ hr{
     #headerwrap{
         min-height: 200px;
     }
+
+    #dg{
+        background: #e0e0e0;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 370px) {
     #map{
         width: 320px; height: 320px;
     }
 
-    .tilt img{
+    .tilt{
         width: 320px;
-        height: 320px;
+        height: 260px;
+    }
+
+    .tilt img{
+        width: 260px;
+        height: 260px;
     }
 
     #dg h4{
@@ -258,14 +270,18 @@ hr{
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 330px) {
     #map{
         width: 280px; height: 280px;
     }
 
+    .tilt{
+        width: 280px;
+    }
+
     .tilt img{
-        width: 300px;
-        height: 300px;
+        width: 240px;
+        height: 240px;
     }
 
     #dg h4{
