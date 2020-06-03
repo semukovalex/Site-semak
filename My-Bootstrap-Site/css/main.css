@@ -214,3 +214,22 @@ hr{
 #padding-frame{
     padding-top: 15px;
 }
+
+@media screen and (max-width: 500px) {
+    #map{
+        width: 350px; height: 350px;
+    }
+    
+    #headerwrap h1{
+        font-size: 30px;
+       
+    }
+    
+    #headerwrap h2{
+        font-size: 26px;
+    }
+
+    #headerwrap{
+        min-height: 200px;
+    }
+}

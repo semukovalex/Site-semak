@@ -176,3 +176,22 @@ textarea {
         width: auto; height: auto;
     }
 }
+
+@media screen and (max-width: 500px) {
+    #headerwrap h1{
+        font-size: 30px;
+       
+    }
+    
+    #headerwrap h2{
+        font-size: 26px;
+    }
+
+    #headerwrap{
+        min-height: 200px;
+    }
+
+    #dg textarea, input{
+        width: 339px;
+    }
+}
