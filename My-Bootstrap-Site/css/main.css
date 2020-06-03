@@ -217,7 +217,7 @@ hr{
 
 @media screen and (max-width: 500px) {
     #map{
-        width: 350px; height: 350px;
+        width: 340px; height: 340px;
     }
     
     #headerwrap h1{
@@ -231,5 +231,53 @@ hr{
 
     #headerwrap{
         min-height: 200px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #map{
+        width: 320px; height: 320px;
+    }
+
+    .tilt img{
+        width: 320px;
+        height: 320px;
+    }
+
+    #dg h4{
+        font-size: 36px;
+    }
+
+    #headerwrap h1{
+        font-size: 28px;
+       
+    }
+    
+    #headerwrap h2{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #map{
+        width: 280px; height: 280px;
+    }
+
+    .tilt img{
+        width: 300px;
+        height: 300px;
+    }
+
+    #dg h4{
+        font-size: 32px;
+    }
+
+    #headerwrap h1{
+        font-size: 24px;
+       
+    }
+    
+    #headerwrap h2{
+        font-size: 20px;
     }
 }

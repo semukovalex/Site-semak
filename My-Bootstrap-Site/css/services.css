@@ -130,7 +130,6 @@ hr{
     height: 294px;
     max-width: 100%;
     min-width: 100%;
-    
 }
 
 .back {
@@ -208,5 +207,37 @@ hr{
     .item p{
         font-size: 12px;
         margin: 5px 0px 5px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .card {
+        width: 320px;
+        height: 300px;
+    }
+
+    #headerwrap h1{
+        font-size: 28px;
+       
+    }
+    
+    #headerwrap h2{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card {
+        width: 280px;
+        height: 300px;
+    }
+
+    #headerwrap h1{
+        font-size: 24px;
+       
+    }
+    
+    #headerwrap h2{
+        font-size: 20px;
     }
 }

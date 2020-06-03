@@ -179,7 +179,7 @@ textarea {
 
 @media screen and (max-width: 500px) {
     #headerwrap h1{
-        font-size: 30px;
+        font-size: 28px;
        
     }
     
@@ -193,5 +193,35 @@ textarea {
 
     #dg textarea, input{
         width: 339px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #dg textarea, input{
+        width: 320px;
+    }
+
+    #headerwrap h1{
+        font-size: 28px;
+       
+    }
+    
+    #headerwrap h2{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #dg textarea, input{
+        width: 280px;
+    }
+
+    #headerwrap h1{
+        font-size: 24px;
+       
+    }
+    
+    #headerwrap h2{
+        font-size: 20px;
     }
 }
