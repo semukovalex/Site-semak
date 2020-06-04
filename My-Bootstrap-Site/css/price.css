@@ -103,6 +103,35 @@ hr{
     letter-spacing: 3px;
 }
 
+#dg{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.col-md-4{
+    margin-bottom: 30px;
+}
+
+.card{
+    border:0; 
+    outline: 3px solid black;
+}
+
+.card-body {
+    padding: 0px 10px 5px 10px;
+}
+
+.card-body h5{
+    font-size: 20px;
+}
+
+/*
+.card-body{
+    border:0; 
+    outline: 3px solid black;
+}
+*/
+
 @media screen and (max-width: 500px) {
     #headerwrap h1{
         font-size: 30px;

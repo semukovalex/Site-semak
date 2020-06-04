@@ -224,6 +224,16 @@ hr{
         font-size: 30px;
        
     }
+
+    .tilt{
+        width: 320px;
+        height: 260px;
+    }
+
+    .tilt img{
+        width: 260px;
+        height: 260px;
+    }
     
     #headerwrap h2{
         font-size: 26px;
@@ -244,16 +254,6 @@ hr{
 @media screen and (max-width: 370px) {
     #map{
         width: 320px; height: 320px;
-    }
-
-    .tilt{
-        width: 320px;
-        height: 260px;
-    }
-
-    .tilt img{
-        width: 260px;
-        height: 260px;
     }
 
     #dg h4{
