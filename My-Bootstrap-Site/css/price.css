@@ -125,6 +125,22 @@ hr{
     font-size: 20px;
 }
 
+#f{
+    background: #2d2d2d;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#f i{
+    color: #bdbdbd;
+    font-size: 30px;
+    padding: 20px;
+}
+
+#f i:hover{
+    color: #ff7878;
+}
+
 /*
 .card-body{
     border:0; 
@@ -144,10 +160,6 @@ hr{
 
     #headerwrap{
         min-height: 200px;
-    }
-
-    .card{
-        height: 100px;
     }
 }
 

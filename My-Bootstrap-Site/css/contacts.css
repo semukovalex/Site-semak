@@ -126,6 +126,12 @@ hr{
     text-transform: uppercase;
 }
 
+#border-form a{
+    font-size: 16px;
+    color: rgb(85, 85, 85);;
+    text-transform: uppercase;
+}
+
 input {
     display: inline-block;
     margin: 10px auto;
