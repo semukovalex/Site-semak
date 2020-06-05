@@ -8,12 +8,12 @@
 <?php
 if (isset($_POST['name'])) {$name = $_POST['name'];}
 if (isset($_POST['email'])) {$email = $_POST['email'];}
-if (isset($_POST['message'])) {$mess = $_POST['message'];}
+if (isset($_POST['mess'])) {$mess = $_POST['mess'];}
 
 $to = "bobeshmo@mail.ru"; /*Укажите ваш адрес электоронной почты*/
 $headers = "Content-type: text/plain; charset=utf-8";
 $subject = "Сообщение с вашего сайта";
-$message = "Имя пославшего: $name \nЭлектронный адрес: $email \nСообщение: $message";
+$message = "Имя пославшего: $name \nЭлектронный адрес: $email \nСообщение: $mess";
 $send = mail ($to, $subject, $message, $headers);
 if ($send == 'true')
 {
