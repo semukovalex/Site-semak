@@ -105,12 +105,12 @@ hr{
 
 @media screen and (max-width: 500px) {
     #headerwrap h1{
-        font-size: 30px;
+        font-size: 28px;
        
     }
     
     #headerwrap h2{
-        font-size: 26px;
+        font-size: 24px;
     }
 
     #headerwrap{
@@ -120,23 +120,23 @@ hr{
 
 @media screen and (max-width: 370px) {
     #headerwrap h1{
-        font-size: 28px;
+        font-size: 26px;
        
     }
     
     #headerwrap h2{
-        font-size: 22px;
+        font-size: 20px;
     }
 
 }
 
 @media screen and (max-width: 330px) {
     #headerwrap h1{
-        font-size: 24px;
+        font-size: 22px;
        
     }
     
     #headerwrap h2{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
