@@ -1,11 +1,43 @@
+<!-- Через 10 секунд после появления сообщения об отправке или ошибке — отправляемся на сайт Кода :) -->
+<meta http-equiv='refresh' content='3; url=http://www.repairshoptiraspol.h1n.ru/'>
+
+<meta charset="UTF-8" />
+
+<!-- Начался блок PHP -->
+
 <?php
-$to = "bobeshmo@mail.ru"; // емайл получателя данных из формы
-$tema = "Форма обратной связи на PHP"; // тема полученного емайла
-$message = "Ваше имя: ".$_POST['name']."<br>";//присвоить переменной значение, полученное из формы name=name
-$message .= "E-mail: ".$_POST['email']."<br>"; //полученное из формы name=email
-$message .= "Тема: ".$_POST['header']."<br>"; //полученное из формы name=phone
-$message .= "Сообщение: ".$_POST['mess']."<br>"; //полученное из формы name=message
-$headers  = 'MIME-Version: 1.0' . "\r\n"; // заголовок соответствует формату плюс символ перевода строки
-  $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n"; // указывает на тип посылаемого контента
-mail($to, $tema, $message, $headers); //отправляет получателю на емайл значения переменных
+
+// Получаем значения переменных из пришедших данных
+
+$to = 'sashasemukov@gmail.com';
+
+$name = $_POST['name'];
+
+$email = $_POST['email'];
+
+$header = $_POST['header'];
+
+$message = $_POST['mess'];
+
+ 
+// Формируем сообщение для отправки, в нём мы соберём всё, что ввели в форме 
+
+$mes = "Имя: $name \nE-mail: $email \nТема: $header \nТекст: $message";
+
+// Пытаемся отправить письмо по заданному адресу
+
+// Если нужно, чтобы письма всё время уходили на ваш адрес — замените первую переменную $email на свой адрес электронной почты
+
+$send = mail($to , $header, $mes, "Content-type:text/plain; charset = UTF-8\r\nFrom:$email");
+
+// Если отправка прошла успешно — так и пишем 
+
+if ($send == 'true')
+
+{echo "Сообщение отправлено";}
+
+// Если письмо не ушло — выводим сообщение об ошибке
+
+else {echo "Ой, что-то пошло не так";}
+
 ?>
