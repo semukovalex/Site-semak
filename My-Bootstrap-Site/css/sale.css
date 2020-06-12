@@ -103,6 +103,31 @@ hr{
     letter-spacing: 3px;
 }
 
+.galery{
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+#f{
+    background: #2d2d2d;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#f i{
+    color: #bdbdbd;
+    font-size: 30px;
+    padding: 20px;
+}
+
+#f i:hover{
+    color: #ff7878;
+}
+
+#padding-frame{
+    padding-top: 15px;
+}
+
 @media screen and (max-width: 500px) {
     #headerwrap h1{
         font-size: 28px;

@@ -24,10 +24,10 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">Главная</a></li>
                     <li><a href="services.html">Услуги</a></li>
-                    <li class="active"><a href="#">Скидки</a></li>
+                    <li class="active"><a href="#">Галерея</a></li>
                     <li><a href="price.html">Цены</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
-                    <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                    <li><a href="https://vk.com/semukov_alex" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -43,7 +43,124 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="image-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <div class="modal-title">Просмотр изображения</div>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive center-block" src="" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="galery">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="#" class="thumbnail">
+                        <img src="img/Galery-1.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="#" class="thumbnail">
+                        <img src="img/Galery-2.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="#" class="thumbnail">
+                        <img src="img/Galery-3.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="#" class="thumbnail">
+                        <img src="img/Galery-4.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="#" class="thumbnail">
+                        <img src="img/Galery-5.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="#" class="thumbnail">
+                        <img src="img/Galery-6.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="#" class="thumbnail">
+                        <img src="img/Galery-7.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="#" class="thumbnail">
+                        <img src="img/Galery-8.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="#" class="thumbnail">
+                        <img src="img/Galery-9.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="#" class="thumbnail">
+                        <img src="img/Galery-10.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="#" class="thumbnail">
+                        <img src="img/Galery-11.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="#" class="thumbnail">
+                        <img src="img/Galery-12.jpg" alt="...">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="f">
+        <div class="container">
+            <div class="row centered">
+                <a href="https://www.instagram.com/semukovalexandr/?hl=ru" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="viber://add?number=37377965863" target="_blank"><i class="fa fa-whatsapp"></i></i></a>
+                <a href="https://vk.com/semukov_alex" target="_blank"><i class="fa fa-vk" ></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Bootstrap -->
     <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        // После загрузки DOM-дерева (страницы)
+        $(function() {
+            //при нажатии на ссылку, содержащую Thumbnail
+            $('a.thumbnail').click(function(e) {
+                //отменить стандартное действие браузера
+                e.preventDefault();
+                //присвоить атрибуту scr элемента img модального окна
+                //значение атрибута scr изображения, которое обёрнуто
+                //вокруг элемента a, на который нажал пользователь
+                $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));
+                //открыть модальное окно
+                $("#image-modal").modal('show');
+            });
+            //при нажатию на изображение внутри модального окна
+            //закрыть его
+            $('#image-modal .modal-body img').on('click', function() {
+                $("#image-modal").modal('hide')
+            });
+        });
+    </script>
+
 </body>
 </html>
