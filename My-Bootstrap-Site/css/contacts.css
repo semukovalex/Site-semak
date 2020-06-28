@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Tenor+Sans&display=swap');
 
 body{
     background-color: #f2f2f2;
-    font-family: "Lato";
+    font-family: 'Noto Sans', sans-serif;
     font-weight: 300;
     font-size: 16px;
     color: #555;
@@ -14,7 +14,7 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway";
+    font-family: 'Tenor Sans', sans-serif;
     font-weight: 300;
     color: #333;
 }
@@ -90,7 +90,7 @@ hr{
 #headerwrap h1{
     margin-top: 10px;
     color: white;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 300;
     letter-spacing: 3px;
 }
@@ -152,9 +152,13 @@ textarea {
 
 #dg{
     background: #e0e0e0;
-    padding-top: 70px;
+    padding-top: 30px;
     padding-bottom: 70px;
     text-align: center;
+}
+
+#dg h1{
+    margin: 30px;
 }
 
 #f{
@@ -177,6 +181,14 @@ textarea {
     padding-top: 15px;
 }
 
+.questions{
+    width: 100%;
+    height: 500px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    outline: 1px solid gray;
+}
+
 @media screen and (max-width: 1199px) {
     #border-form{
         width: auto; height: auto;
@@ -188,7 +200,7 @@ textarea {
         font-size: 28px;
        
     }
-    
+
     #headerwrap h2{
         font-size: 24px;
     }
